@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 8</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+
+//Task1
+
+var userinput=prompt('Enter a word to check the upper case and lower case (HEELO,hello)')
+
+if(userinput =='HELLO'){
+    document.write( userinput, "has upper case letters")
+}
+
+else if(userinput == 'hello'){
+    document.write(userinput, "has lower case letter")
+}
+
+
+//task2
+
+var input=prompt("Enter a number to check positive or Negative")
+
+if(input> 0){
+    document.write(input,"is positive")
+}
+
+else if(input<0){
+    document.write(input,"is Negative")
+}
+else{
+    document.write('zero')
+}
+
+
+//Task3
+
+var firstNumber=prompt("Enter the first Number")
+
+var secondNumber=prompt("Enter the Second Number")
+
+if(firstNumber>secondNumber){
+    document.write("First Number is large")
+}
+else if(secondNumber > firstNumber){
+    document.write("Second number is large")
+}
+        else{
+            document.write("Both Number are Equal")
+        }
+
+
+
+//Task4
+
+
+var userCharacter = prompt('Check vowels & consonants here');
+        if(userCharacter === 'a'){
+        document.write(`<h1 class ="q">${userCharacter} is a vowel</h1>`);
+
+        }
+        else if(userCharacter === 'e'){
+        document.write(`<h1 class ="q">${userCharacter} is a vowel</h1>`);
+
+        }
+        else if(userCharacter === 'i'){
+        document.write(`<h1 class ="q">${userCharacter} is a vowel</h1>`);
+
+        }
+        else if(userCharacter === 'o'){
+        document.write(`<h1 class ="q">${userCharacter} is a vowel</h1>`);
+
+        }
+        else if(userCharacter === 'u'){
+        document.write(`<h1 class ="q">${userCharacter} is a vowel</h1>`);
+
+        }
+        else{
+        document.write(`<h1 class ="q">${userCharacter} is a consonant</h1>`);
+
+        }
+
+
+//Task5
+
+var FirstPass = prompt('Enter your password');
+        var SecondPass = prompt('Re-enter your password');
+
+        if (FirstPass == '' || SecondPass == '') {
+            document.write(`<h1 class ="q">Please enter your password</h1>`);
+            
+        } else if (FirstPass == SecondPass) {
+            document.write(`<h1 class ="a">Your password is correct</h1>`);
+            
+        }
+        else {
+            document.write(`<h1 class ="a">Your password is incorrect</h1>`);
+        }
+
+
+
+//Task6
+
+// This if/else statement does not work. Try to fix it:
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// greeting = "Good day";
+// else
+// greeting = "Good evening";
+// }
+
+var greeting = 'Good day';
+        var greet = 'Good evening';
+        var hour = 13 ;
+        if(18 < hour){
+            document.write(greeting);
+
+        }
+        else{
+            document.write(greet);
+
+        }
+
+
+//Task7
+
+var time = +prompt('Enter a time (24hours) like this format 1900,1200,1400');
+        if(time > 0 && time <=1200){
+            document.write('Good Mornung');
+
+        }
+        else if (time > 1200 && time <=1700){
+            document.write(`Good Afternoon`);
+            
+        }
+        else if (time > 1700 &&  time <= 2100){
+            document.write("Good evening");
+
+        }else if (time > 2100 && time <= 2359){
+            document.write("Good Night");
+
+        }
+        else{
+            document.write("Please enter the time in this format (1200,1300,1400");
+
+        }
+
+
+
+
+
+    </script>
+</body>
+</html> 
